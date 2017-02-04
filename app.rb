@@ -8,5 +8,5 @@ end
 
 post '/search/' do
     searchterm = params[:searchterm] || "Nothing Submitted"
-    erb :index, :locals => {'searchterm' => searchterm}
+    erb :search_results, :locals => {'searchterm' => searchterm}
 end
