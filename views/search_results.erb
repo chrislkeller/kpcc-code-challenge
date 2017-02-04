@@ -1,3 +1,18 @@
-<div class="parent">
+<div class="result-list">
     <h1>You searched for <%= searchterm %></h1>
+    <% articles.each do |item| %>
+        <div class="item">
+            <header>
+                <h3><%= item["title"] %></h3>
+            </header>
+            <section class="image">
+                <%= item["thumbnail"] %>
+            </section>
+            <section class="audio">
+                <% if item["audio"].empty? == false %>
+                    <%= item["audio"] %>
+                <% end %>
+            </section>
+        </div>
+    <% end %>
 </div>
