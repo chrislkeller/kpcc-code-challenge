@@ -10,41 +10,51 @@ body {
     padding: 1% 0;
 }
 
-.search-form {
-    width: 100%;
+form.search-form {
+    width: 40%;
     height: 200px;
-    margin: 10% 0%;
+    margin: 5% 30%;
 }
 
-.search-form form {
-    margin: 0% 30%;
+label, .inputs {
+    display:block;
+}
+
+label {
+    font-size: 75%;
+    color: #949491;
+    font-weight: bold;
+}
+
+label:after {
+    content: ": "
+}
+
+.inputs {
+    width: 100%;
 }
 
 input[type=text] {
+    width: 75%;
     height: 40px;
     background: none;
     border: 0px;
-    border-bottom: 4px solid #00C5CD;
+    border-bottom: 3px solid #00C5CD;
     outline: none;
     font-size: 125%;
+    font-weight: 200;
     color: #2B2B2B;
 }
 
 input[type=submit] {
-    height: 40px;
+    width: 20%;
+    height: 35px;
     background: #00C5CD;
     border: 0px;
     font-weight: 800;
     color: #ffffff;
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
 
 .result-list {
     width: 96%;
