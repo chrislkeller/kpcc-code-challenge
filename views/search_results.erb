@@ -1,18 +1,19 @@
-<div class="result-list">
-    <h1>You searched for <%= searchterm %></h1>
+<div class="results">
+    <h1>Displaying <%= quantity %> articles that contain <%= searchterm %></h1>
+    <h3><a href="/">Search again</a></h3>
     <% articles.each do |item| %>
         <div class="item">
-            <header>
-                <h3><%= item["title"] %></h3>
-            </header>
-            <section class="image">
-                <%= item["thumbnail"] %>
-            </section>
-            <section class="audio">
-                <% if item["audio"].empty? == false %>
-                    <%= item["audio"] %>
-                <% end %>
-            </section>
+            <h3><%= item["title"] %></h3>
+            <% if item["audio"].empty? == false %>
+                <audio src="<%= item["audio"][0]["url"] %>" preload="auto" />
+            <% else %>
+                <p><em>No audio found</em></p>
+            <% end %>
         </div>
     <% end %>
 </div>
+<script>
+    audiojs.events.ready(function(){
+        var as = audiojs.createAll();
+    });
+</script>
