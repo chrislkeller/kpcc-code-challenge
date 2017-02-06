@@ -56,15 +56,17 @@ input[type=submit] {
     text-transform: uppercase;
 }
 
-.result-list {
+.results {
     width: 96%;
     margin: 1% 2%;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .item {
-    background: blue;
+    width: 100%;
+    margin-top: 1%;
+    border-bottom: 1px solid #00C5CD;
+}
+
+.item .audiojs {
+    margin-bottom: 10px;
 }
