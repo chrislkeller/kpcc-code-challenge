@@ -70,3 +70,48 @@ input[type=submit] {
 .item .audiojs {
     margin-bottom: 10px;
 }
+
+
+@media screen and (max-width: 695px) {
+    input[type=text] {
+        width: 65%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    input[type=text] {
+        width: 65%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input[type=text] {
+        width: 45%;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input[type=text] {
+        width: 60%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+        height: 25px;
+        font-size: 6px;
+    }
+}
